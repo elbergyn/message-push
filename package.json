@@ -1,5 +1,5 @@
 {
-  "name": "fcmNotifications",
+  "name": "message-push",
   "version": "0.0.1",
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
@@ -9,7 +9,11 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "rebuild-android": "npm run del-android && ionic capacitor build android && npm run copy-manifest",
+    "rebuild-android-run": "npm run rebuild-android && npm run android",
+    "android": "ionic capacitor run android",
+    "android-reload": "ionic cap run android -l --external"
   },
   "private": true,
   "dependencies": {

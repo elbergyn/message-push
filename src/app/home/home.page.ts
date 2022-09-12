@@ -16,7 +16,7 @@ export class HomePage implements OnInit {
 
   notifications: PushNotificationSchema[] = [];
 
-  topicName = 'super-awesome-topic';
+  topicName = 'message-push';
   remoteToken: string;
 
   constructor(private platform: Platform, private zone: NgZone) {}
